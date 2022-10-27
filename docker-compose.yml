@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  terraform:
+    image: hashicorp/terraform:1.3.3
+    volumes:
+      - ./terraform:/usr/src/terraform
+    env_file: .env
+    entrypoint: ""
+    working_dir: /usr/src/terraform
